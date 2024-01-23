@@ -16,9 +16,9 @@ export default function Navbar(props) {
         <li className="nav-item">
           <a className="nav-link active" style={{fontSize:'19px',fontFamily:'Cambria Cochin Georgia Times Times New Roman'}} aria-current="page" href="/">{props.Home}</a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a className="nav-link" style={{fontSize:'19px',fontFamily:'Cambria Cochin Georgia Times Times New Roman'}} href="/about">{props.AboutUs}</a>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>
@@ -51,11 +51,11 @@ export default function Navbar(props) {
 }
 
 Navbar.propTypes = {name:PropTypes.string.isRequired,
-                    AboutUs:PropTypes.string.isRequired,
+                    // AboutUs:PropTypes.string.isRequired,
                     Home:PropTypes.string.isRequired}
 
 Navbar.defaultProps = {
     name:"Set Title Here",
-    AboutUs:"Set About Us",
+    // AboutUs:"Set About Us",
     Home:"Set the Text"
 }                    
